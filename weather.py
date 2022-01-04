@@ -86,9 +86,7 @@ def main():
         date_text = now.strftime("%A, %B, %d")  # The date text
         black_lines.text((0, 0), "Screen updated on " + date_text + " at " + str(now.strftime("%I:%M %p")),
                          font= font18, fill=(0, 0, 0, 255))  # Screen updated section
-
-
-
+        screen_tools.inky_push_display_anysize(blank_screen, 1)
 
 
 main()
