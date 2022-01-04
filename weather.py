@@ -2,8 +2,8 @@
 # Grab info from OWM to display
 # Info pulled: - 48 hour forecast, - today high + low, - Description now + forecast
 
-import matplotlib.pyplot as plt
-import numpy as np
+#import matplotlib.pyplot as plt
+#import numpy as np
 import requests
 import json
 from datetime import datetime
