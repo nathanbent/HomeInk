@@ -70,6 +70,7 @@ def owm_graph_create(graph_dataset_one, graph_dataset_two, graph_dataset_metric)
     plt.plot(graph_dataset_one, graph_dataset_two)
     plt.show()
 
+
 def main():
     while True:
         time_pulled = datetime.now()
