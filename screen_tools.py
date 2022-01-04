@@ -3,7 +3,7 @@
 import time
 from inky.auto import auto
 from inky.inky_uc8159 import Inky, CLEAN
-from prefs import Prefs
+#from prefs import Prefs
 from PIL import Image
 
 inky_display = auto(ask_user=True, verbose=False)  # Sets some internal parameters for the screen
