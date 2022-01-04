@@ -82,8 +82,9 @@ def main():
         print(time_pulled)
 
         blank_screen = screen_tools.create_blank_background(screen_width, screen_height)
-        black_lines = ImageDraw.Draw(blank_screen)  # White box
-        black_lines.line((0, 15, screen_width, 15), fill=(0, 0, 0, 255))  # Line below times
+        draw = ImageDraw.Draw(blank_screen)
+#        black_lines = ImageDraw.Draw(blank_screen)  # White box
+        draw.line((0, 15, screen_width, 15), fill=(0, 0, 0, 255))  # Line below times
         now = datetime.now()  # Load the current time to show on display
         date_text = now.strftime("%A, %B, %d")  # The date text
         black_lines.text((0, 0), "Screen updated on " + date_text + " at " + str(now.strftime("%I:%M %p")),
