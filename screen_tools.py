@@ -75,11 +75,3 @@ def inky_push_display_anysize(image, display_saturation):
     image = Image.open(newimage)
     inky.set_image(image, saturation=display_saturation)
     inky.show()
-
-def main():
-    #inky_clear()
-    #inky_clean()
-    #inky_cycle()
-
-if __name__ == '__main__':
-    main()
