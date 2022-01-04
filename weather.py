@@ -8,6 +8,7 @@ import requests
 import json
 from datetime import datetime
 import screen_tools
+from PIL import Image,ImageDraw,ImageFont
 
 screen_width = 600
 screen_height = 448
