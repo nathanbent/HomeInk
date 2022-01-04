@@ -81,8 +81,8 @@ def main():
         daily_precip_percent, temp_min, temp_max = owm_request_parser(data, "daily")
         print(time_pulled)
 
-        img = Image.new("P", inky_display.resolution)
-        draw = ImageDraw.Draw(img)
+        blank_background = Image.new("RGBA", (600, 448), (255, 255, 255, 0))
+        draw = ImageDraw.Draw(blank_background)
 #        black_lines = ImageDraw.Draw(blank_screen)  # White box
         draw.line((0, 15, screen_width, 15), fill=(0, 0, 0, 255))  # Line below times
         now = datetime.now()  # Load the current time to show on display
